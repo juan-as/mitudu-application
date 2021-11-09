@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AddToDoPage"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Add New Task"
+        android:textColor="@color/navy"
+        android:textSize="110px"
+        android:textStyle="bold"
+        android:layout_marginTop="125px"
+        android:layout_marginLeft="100px"/>
+
+    <EditText
+        android:id="@+id/et_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Task Name"
+        android:layout_margin="50px"
+        />
+
+    <EditText
+        android:id="@+id/et_date"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="dd/MM/yy"
+        android:focusable="false"
+        android:clickable="true"
+        android:layout_margin="50px"
+        />
+
+    <EditText
+        android:id="@+id/et_time"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="HH/mm"
+        android:focusable="false"
+        android:layout_margin="50px"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:gravity="bottom"
+        android:orientation="vertical"
+        android:layout_weight="1">
+
+        <Button
+            android:id="@+id/btn_add"
+            android:layout_width="380dp"
+            android:layout_height="65dp"
+            android:layout_marginBottom="50px"
+            android:backgroundTint="@color/navy"
+            app:cornerRadius="8dp"
+            android:text="Add Task"
+            android:textColor="@color/white"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:layout_gravity="center"
+            />
+
+    </LinearLayout>
+
+
+
+</LinearLayout>

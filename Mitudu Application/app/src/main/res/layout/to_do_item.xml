@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="wrap_content">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="10dp"
+        android:layout_margin="10dp"
+        android:background="@drawable/rounded_corner_on_progress">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/tvNamaToDo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Nama TodoList"
+                android:textColor="@color/background"
+                android:textSize="25sp"
+                android:textStyle="bold"
+                />
+
+            <TextView
+                android:id="@+id/tvTanggalToDo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Tanggal to do"
+                android:textColor="@color/background"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:layout_below="@id/tvNamaToDo"
+                />
+
+            <TextView
+                android:id="@+id/tvJamToDo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Tanggal to do"
+                android:textColor="@color/background"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:layout_below="@id/tvNamaToDo"
+                android:layout_alignParentEnd="true"
+                />
+
+            <com.google.android.material.progressindicator.LinearProgressIndicator
+                android:id="@+id/progressIndicator"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tvTanggalToDo"
+                android:layout_marginTop="10dp"
+                />
+
+        </RelativeLayout>
+
+    </FrameLayout>
+
+</androidx.cardview.widget.CardView>

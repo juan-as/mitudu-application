@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@color/background"
+    android:orientation="vertical"
+    android:weightSum="10"
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.5"
+        android:paddingLeft="100px"
+        android:paddingRight="100px">
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Mitudu"
+            android:textColor="@color/navy"
+            android:textSize="50sp"
+            android:textStyle="bold"
+            android:layout_marginTop="100px"/>
+
+        <TextView
+            android:id="@+id/onProgressButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="On Progress"
+            android:textColor="@color/navy"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            android:layout_marginTop="60px"
+            android:layout_below="@id/title"
+            android:clickable="true"
+            android:onClick="toProgress"/>
+
+        <TextView
+            android:id="@+id/doneButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Done"
+            android:textColor="#bfbfbf"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            android:layout_marginTop="60px"
+            android:layout_below="@id/title"
+            android:layout_toRightOf="@id/onProgressButton"
+            android:layout_marginLeft="65dp"
+            android:onClick="toDone"/>
+
+    </RelativeLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="9.5">
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/btnAddToDo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/yellow"
+            android:src="@drawable/addicon"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="40dp"
+            android:layout_marginRight="35dp"
+            android:onClick="toAdd"
+            android:layout_gravity="end|bottom"/>
+
+        <androidx.fragment.app.FragmentContainerView
+            android:id="@+id/fragments"
+            android:name="com.example.projectappkelasbesar.ToDoFragment"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </FrameLayout>
+
+
+
+</LinearLayout>
