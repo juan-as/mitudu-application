@@ -1,6 +1,5 @@
 
-# To Do List App - Phincon Academy Assignment
-
+# To Do List App 
 Sebuah aplikasi simple untuk menyimpan daftar pekerjaan (to do list) untuk OS Android.
 
 
